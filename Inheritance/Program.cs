@@ -50,7 +50,18 @@ namespace Inheritance
 
             };
 
-            Console.WriteLine();
+            
+
+            var myAnimals = new Animal[2] { myBird, Lizard };
+
+            foreach( var animal in myAnimals)
+            {
+                Console.WriteLine($"Alive: {animal.IsAlive}");
+                Console.WriteLine($"Age: {animal.Age} years old");
+                Console.WriteLine($"It has {animal.LegCount} legs");
+                Console.WriteLine($"It Lives by  {animal.LandSeeAir}");
+            }
+
 
 
 
